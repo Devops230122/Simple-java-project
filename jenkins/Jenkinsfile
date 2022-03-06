@@ -9,6 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
+				// This is temporary change.
             }
         }
         stage('Test') {
@@ -28,3 +29,4 @@ pipeline {
         }
     }
 }
+// Hi Sreenu I changed the build stage.
